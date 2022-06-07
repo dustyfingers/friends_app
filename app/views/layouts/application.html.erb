@@ -23,6 +23,10 @@
 
     <!-- where our view contents are rendered -->
     <div class="container">
+        <% if notice %>
+          <%= render 'layouts/alerts' %>
+        <% end %>
+        <!-- main view contents -->
         <%= yield %>
     </div>
 
