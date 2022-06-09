@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   get "home/about"
 
   # Defines the root path route ("/")
-  root "home#index"
+  # old root route
+  # root "home#index"
+  root "friends#index"
 end

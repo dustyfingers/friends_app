@@ -1,3 +1,4 @@
+<% if user_signed_in? %>
 <h1>Friends</h1>
 
 <div id="friends">
@@ -5,12 +6,9 @@
     <thead class="table-dark">
       <tr>
         <th scope="col">Email</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
+        <th scope="col">Name</th>
         <th scope="col">Phone</th>
         <th scope="col">Twitter</th>
-        <th scope="col">User Id</th>
-        <th scope="col">Inspect</th>
         <th scope="col">Edit</th>
       </tr>
     </thead>
@@ -26,3 +24,8 @@
 </div>
 
 <%= link_to "New Friend", new_friend_path, class: "btn btn-success" %>
+<% else %>
+  <h1>Sign up now!</h1>
+  <p>Create an account now to start tracking your friends!</p>
+<% end %>
+

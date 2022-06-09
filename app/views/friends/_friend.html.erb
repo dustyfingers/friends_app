@@ -1,14 +1,11 @@
 <tr id="<%= dom_id friend %>">
-  <td>
-    <%= friend.first_name %>
-  </td>
-
-  <td>
-    <%= friend.last_name %>
-  </td>
 
   <td>
     <%= friend.email %>
+  </td>
+
+  <td>
+    <%= "#{friend.first_name} #{friend.last_name}" %>
   </td>
 
   <td>
@@ -17,14 +14,6 @@
 
   <td>
     <%= friend.twitter %>
-  </td>
-
-  <td>
-    <%= friend.user_id %>
-  </td>
-
-  <td>
-    <%= link_to "Inspect Friend", friend, class: "btn btn-info text-white" %>
   </td>
 
   <td>

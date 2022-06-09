@@ -11,7 +11,6 @@
           <!-- run `rails routes` in the console to see the prefix - append _path to that and it will give you the route -->
           <%= link_to 'About Us', home_about_path, class: "nav-link" %>
         </li>
-
         <% if user_signed_in? %>
           <li class="nav-item">
             <!-- notice we use button_to instead of link_to AND explicity pass the method to this link since it calls to a DELETE endpoint -->
@@ -19,9 +18,6 @@
           </li>
           <li class="nav-item">
             <%= link_to 'Edit Profile', edit_user_registration_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Friends', friends_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to 'Add Friend', new_friend_path, class: "nav-link" %>
@@ -34,7 +30,6 @@
             <%= link_to 'Sign Up', new_user_registration_path, class: "nav-link" %>
           </li>
         <% end %>
-
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
